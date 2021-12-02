@@ -1,0 +1,22 @@
+<script>
+    var numeroDeElementos;
+
+    function serieFibonnacci(number){
+        var numeroDeElementos = 0;
+        var anterior=1;
+
+        for (i=0; i<number; i++){
+
+            var tmp = numeroDeElementos;
+            numeroDeElementos = anterior;
+            anterior = tmp + anterior;
+
+            console.log (tmp+","+numeroDeElementos+"="+anterior);
+        }
+       
+    }
+
+    serieFibonnacci(5);
+
+
+</script>
